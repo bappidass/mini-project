@@ -11,8 +11,12 @@ const PORT = process.env.PORT || 5000;
 
 
 app.use(cors({
- origin: 'https://mini-project-phi-ruddy.vercel.app',
+ origin:  'https://mini-project-phi-ruddy.vercel.app',
 }));
+
+// app.use(cors({
+//   origin:  'http://localhost:5173',
+//  }));
   
 app.use(express.json());
 
