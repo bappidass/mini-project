@@ -19,7 +19,7 @@ app.use(express.json());
 app.use('/api/products', productRoutes);
 
 
-mongoose.connect(process.env.MONGODB_URI || 'mongodb://localhost:27017/marketplace')
+mongoose.connect(process.env.MONGODB_URI || 'mongodb+srv://company1:company1>@cluster0.iehhi.mongodb.net/marketplace?retryWrites=true&w=majority&appName=Cluster0')
   .then(() => console.log('Connected to MongoDB'))
   .catch(err => console.error('MongoDB connection error:', err));
 
